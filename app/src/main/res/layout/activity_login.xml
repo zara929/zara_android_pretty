@@ -69,6 +69,7 @@
         android:layout_below="@id/pass"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
+        android:background="@drawable/shape_round"
         android:text="Login" />
 
     <TextView
