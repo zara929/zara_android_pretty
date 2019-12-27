@@ -1,0 +1,41 @@
+<resources>
+    <string-array name="LOCATION">zara project
+        <item>Bandung</item>
+        <item>Bekasi</item>
+        <item>Bogor</item>
+        <item>Denpasar</item>
+        <item>Jakarta Selatan</item>
+        <item>Jakarta Barat</item>
+        <item>Jakarta Utara</item>
+        <item>Jakarta Timur</item>
+        <item>Jakarta Pusat</item>
+        <item>Makassar</item>
+        <item>Malang</item>
+        <item>Manado</item>
+        <item>Medan</item>
+        <item>Padang</item>
+        <item>Semarang</item>
+        <item>Solo</item>
+        <item>Tanggerang</item>
+        <item>Yogyakarta</item>
+        <item>Singapura</item>
+        <item>Malaysia</item>
+        <item>HongKong</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_profile">profile</string>
+    <string name="title_activity_notifikasion">notifikasion</string>
+    <string name="title_activity_itemlogin">itemlogin</string>
+    <string name="title_activity_login_ui">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>
