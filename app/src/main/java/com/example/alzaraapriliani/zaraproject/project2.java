@@ -29,7 +29,7 @@ public class project2 extends AppCompatActivity {
             }
         });*/
 
-        findViewById(R.id.btnprofile).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.imageView5).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(project2.this, profilemain.class);
@@ -38,7 +38,7 @@ public class project2 extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.notif).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.imageView3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(project2.this, notifikasion.class);
@@ -47,5 +47,23 @@ public class project2 extends AppCompatActivity {
             }
         });
 
+        //Add event login button
+        findViewById(R.id.imageView2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // if intent add classname.class it can move another activity
+                Intent intent = new Intent(project2.this, loginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.resto).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // if intent add classname.class it can move another activity
+                Intent intent = new Intent(project2.this, resto_list.class);
+                startActivity(intent);
+            }
+        });
     }
 }

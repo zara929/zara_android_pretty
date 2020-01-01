@@ -1,115 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#cc99">
 
-
-
-
-
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/bar1_top"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#FFFFFF">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-       <RelativeLayout
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:paddingLeft="10dp"
-           android:paddingRight="10dp">
-
-           <ImageButton
-               android:id="@+id/btnprofile"
-               android:layout_width="30dp"
-               android:layout_height="30dp"
-               android:layout_centerVertical="true"
-               android:background="@drawable/tyty"/>
-
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_centerInParent="true"
-               android:fontFamily="@font/bubblegum_sans"
-               android:text="BILLET"
-               android:textColor="@color/colorAccent"
-               android:textSize="30dp" />
-
-           <ImageButton
-               android:id="@+id/notif"
-               android:layout_width="35dp"
-               android:layout_height="35dp"
-               android:layout_alignParentRight="true"
-               android:layout_centerVertical="true"
-               android:background="@drawable/notif1" />
-
-
-
-       </RelativeLayout>
-
-
-    </android.support.design.widget.AppBarLayout>
+        <include layout="@layout/layout_yogiyo_bottom_navigation" />
+    </android.support.constraint.ConstraintLayout>
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btn1"
-            android:layout_width="match_parent"
+            android:id="@+id/src1"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="South Korea" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="Search your Destinaton" />
+
+
+        <ImageButton
+            android:id="@+id/resto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/src1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/resto"/>
 
         <TextView
+            android:id="@+id/txt_resto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Seoul"
+            android:layout_below="@+id/resto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="Restaurant" />
+
+        <ImageView
+            android:id="@+id/img_hotel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/src1"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/hotel" />
+
+        <ImageView
+            android:id="@+id/img_amust"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/src1"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/amus" />
+
+        <ImageView
+            android:id="@+id/img_bus"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/resto"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/bus" />
+
+        <ImageView
+            android:id="@+id/img_rute"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/img_hotel"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/rute" />
+
+        <ImageView
+            android:id="@+id/img_loc"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/img_amust"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/loc" />
+
+        <TextView
+            android:id="@+id/txt_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="525dp"
             android:textSize="22dp"
-            android:textColor="#000000"
-            android:layout_below="@id/btn1"/>
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/bubblegum_sans"
+            android:textColor="#000"
+            android:text="Choose your destination in Jakarta with Us"/>
+
+        <TextView
+            android:id="@+id/txt_jrny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_open"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/bubblegum_sans"
+            android:textColor="#000"
+            android:text="Make your Journey and Memories"/>
+
+        <TextView
+            android:id="@+id/txt_jkrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_below="@id/txt_jrny"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/bubblegum_sans"
+            android:textColor="#000"
+            android:text="Welcome to Jakarta"/>
+
+
+
     </RelativeLayout>
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#FFFFFF"
-        android:layout_alignParentBottom="true">
-
-        <RelativeLayout
-            android:id="@+id/Bar_end"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
-
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_centerVertical="true"
-                android:background="@drawable/board"/>
-
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_centerVertical="true"
-                android:layout_centerInParent="true"
-                android:background="@drawable/cinem"/>
-
-            <ImageButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/tiketicon"/>
-
-        </RelativeLayout>
-
-
-
-
-
-
-    </android.support.design.widget.AppBarLayout>
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

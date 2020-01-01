@@ -1,9 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register_Activity">
+    tools:context=".register_Activity"
+    android:background="#d8bfd8">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/register"
+        android:layout_width="119dp"
+        android:layout_height="111dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/pipo" />
+
+    <TextView
+        android:id="@+id/identitas"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="30dp"
+        android:layout_below="@id/register"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_nm"
+        android:hint="Your Name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/identitas" />
+    <TextView
+        android:id="@+id/grs1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/edit_nm"
+        android:layout_alignRight="@+id/edit_nm"
+        android:layout_below="@+id/edit_nm"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/mail"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="30dp"
+        android:layout_below="@id/grs1"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_mail"
+        android:hint="alex00@gmail.com"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/mail" />
+    <TextView
+        android:id="@+id/grs2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/edit_mail"
+        android:layout_alignRight="@+id/edit_mail"
+        android:layout_below="@+id/edit_mail"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/pwd"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="30dp"
+        android:layout_below="@id/grs2"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:hint="Password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/pwd" />
+    <TextView
+        android:id="@+id/grs3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/edit_pwd"
+        android:layout_alignRight="@+id/edit_pwd"
+        android:layout_below="@+id/edit_pwd"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/no_phone"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="30dp"
+        android:layout_below="@id/grs3"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:hint="0898xxxxxx"
+        android:textColorHint="#fff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_below="@id/no_phone"/>
+
+    <TextView
+        android:id="@+id/grs4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignRight="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:background="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btn_cncle"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/shape_round"
+        android:text="Cancle"
+        android:layout_below="@id/grs4"/>
+
+    <Button
+        android:id="@+id/btn_dne"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/shape_round"
+        android:text="Done"
+        android:layout_below="@id/grs4"/>
+
+</RelativeLayout>

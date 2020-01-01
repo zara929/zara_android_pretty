@@ -34,6 +34,9 @@ public class sarang extends AppCompatActivity {
             }
         });
 
+        /**
+         * after 2second it will be move project2 activity
+         */
         new Handler(){
             @Override
             public void handleMessage(Message msg) {

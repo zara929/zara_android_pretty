@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pixel"
+    android:background="@drawable/pink"
     tools:context=".loginActivity">
 
     <ImageView
         android:id="@+id/gambar"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="131dp"
+        android:layout_height="139dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
@@ -27,7 +27,7 @@
         android:layout_centerHorizontal="true"
         android:background="@null"
         android:textColor="#fff"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
         android:inputType="textEmailAddress" />
 
@@ -48,7 +48,7 @@
         android:textColorHint="#55FFFFFF"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/usr"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@null"
         android:textColor="#000"
         android:ems="10"
@@ -72,27 +72,26 @@
         android:background="@drawable/shape_round"
         android:text="Login" />
 
-    <TextView
-        android:id="@+id/acc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
         android:layout_below="@id/button"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="15dp"
         android:textColor="#fff"
-        android:textSize="20dp"
-        android:text="Don't have an Account? " />
-
-    <TextView
-        android:id="@+id/frgt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/acc"
+        android:background="#33ffffff"
+        android:text="Don't have an Account?" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/button2"
         android:textColor="#fff"
-        android:textSize="20dp"
-        android:text="Forget your Password? " />
+        android:background="#33ffffff"
+        android:text="Forget your Password?" />
 
 
 </RelativeLayout>
