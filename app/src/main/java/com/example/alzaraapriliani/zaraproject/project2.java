@@ -57,13 +57,6 @@ public class project2 extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.resto).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // if intent add classname.class it can move another activity
-                Intent intent = new Intent(project2.this, resto_list.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }
