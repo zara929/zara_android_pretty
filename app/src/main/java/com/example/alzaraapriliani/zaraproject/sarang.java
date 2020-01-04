@@ -23,21 +23,23 @@ public class sarang extends AppCompatActivity {
         //how to move activity
         //1. create view
         ProgressBar progress_bar1 = findViewById(R.id.progress_bar1);
-        progress_bar1.setVisibility(View.GONE);
-        //2. make click listener
-        progress_bar1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //3. create intent
-                Intent intent = new Intent(sarang.this, project2.class);
-                startActivity(intent);
-            }
-        });
+        if (progress_bar1 != null) {
+            progress_bar1.setVisibility(View.GONE);
+            //2. make click listener
+            progress_bar1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //3. create intent
+                    Intent intent = new Intent(sarang.this, project2.class);
+                    startActivity(intent);
+                }
+            });
+        }
 
         /**
          * after 2second it will be move project2 activity
          */
-        new Handler(){
+        new Handler() {
             @Override
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
@@ -45,7 +47,6 @@ public class sarang extends AppCompatActivity {
                 startActivity(intent);
             }
         }.sendEmptyMessageDelayed(0, 2000);
-
 
 
     }

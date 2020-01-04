@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.alzaraapriliani.zaraproject.ui.testpage.TestActivity;
+
 public class project2 extends AppCompatActivity {
 
     @Override
@@ -58,5 +60,9 @@ public class project2 extends AppCompatActivity {
         });
 
 
+    }
+
+    public void goTestPage(View view) {
+        TestActivity.go(this);
     }
 }
